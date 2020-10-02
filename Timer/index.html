@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="countdown timer">
+        <meta name="viewport" content="width=device-width,initial-scale =1">
+        <title>COUNTDOWN TIMER</title>
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#start").click(function () {
+
+                    $("#upd").hide();
+                    $("#downd").hide();
+                    $("#uph").hide();
+                    $("#downh").hide();
+                    $("#upm").hide();
+                    $("#downm").hide();
+                    $("#ups").hide();
+                    $("#downs").hide();
+
+                });
+                $("#reset").click(function () {
+
+                    $("#upd").show();
+                    $("#downd").show();
+                    $("#uph").show();
+                    $("#downh").show();
+                    $("#upm").show();
+                    $("#downm").show();
+                    $("#ups").show();
+                    $("#downs").show();
+
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center;">COUNT-DOWN TIMER</h1>
+        <div id="clockdiv">
+            <div>
+                <span id="day" class="days">0</span>
+
+                <div class="smalltext">DAYS</div>
+                <button id="upd" class="btn-group-lg btn3d" onclick=" if(getElementById('day').textContent>= 365) { getElementById('day').innerHTML = 0 } else
+                    {getElementById('day').innerHTML = +getElementById('day').textContent + +1 }">↑</button>
+                <button id="downd" class="btn-group-lg btn3d" onclick=" if(getElementById('day').textContent <=0) { getElementById('day').innerHTML=365 } else
+                    {getElementById('day').innerHTML=+getElementById('day').textContent - +1 }">↓</button>
+            </div>
+            <div>
+                <span id="hour" class="hours">0</span>
+                <div class="smalltext">HOURS</div>
+                <button id="uph" class="btn-group-lg btn3d" onclick=" if(getElementById('hour').textContent>= 23) { getElementById('hour').innerHTML = 0 } else
+                    {getElementById('hour').innerHTML = +getElementById('hour').textContent + +1 }">↑</button>
+                <button id="downh" class="btn-group-lg btn3d" onclick=" if(getElementById('hour').textContent <=0) { getElementById('hour').innerHTML=23 } else
+                    {getElementById('hour').innerHTML=+getElementById('hour').textContent - +1 }">↓</button>
+            </div>
+            <div>
+                <span id="minute" class="minutes">0</span>
+                <div class="smalltext">MINUTES</div>
+                <button id="upm" class="btn-group-lg btn3d" onclick=" if(getElementById('minute').textContent>= 59) { getElementById('minute').innerHTML = 0 }
+                    else {getElementById('minute').innerHTML = +getElementById('minute').textContent + +1 }">↑</button>
+                <button id="downm" class="btn-group-lg btn3d" onclick=" if(getElementById('minute').textContent <=0) { getElementById('minute').innerHTML=59 }
+                    else {getElementById('minute').innerHTML=+getElementById('minute').textContent - +1 }">↓</button>
+            </div>
+            <div>
+                <span id="second" class="seconds">0</span>
+                <div class="smalltext">SECONDS</div>
+                <button id="ups" class="btn-group-lg btn3d" onclick=" if(getElementById('second').textContent>= 59) { getElementById('second').innerHTML = 0 }
+                    else {getElementById('second').innerHTML = +getElementById('second').textContent + +1 }">↑</button>
+                <button id="downs" class="btn-group-lg btn3d" onclick=" if(getElementById('second').textContent <=0) { getElementById('second').innerHTML=59 }
+                    else {getElementById('second').innerHTML=+getElementById('second').textContent - +1 }">↓</button>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <button id="start"
+                style="margin: 50px;color:white;height: 30px;text-shadow: 2px 2px 2px black;box-shadow: 5px 5px 5px black;"
+                class="btn-group-lg btn3d">START</button><span class="glyphicon glyphicon-ok"></span>
+            <button id="reset"
+                style="margin: 50px;color:white;height: 30px;text-shadow: 2px 2px 2px black;box-shadow: 5px 5px 5px black;"
+                class="btn-group-lg btn3d">RESET</button><span class="glyphicon glyphicon-ok"></span>
+        </div>
+
+        <script src="scripts/script.js"></script>
+
+
+    </body>
+
+</html>

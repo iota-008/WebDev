@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fade Effects Using JQuery</title>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $("#fadeColorout").click(function () {
+
+
+                    $("#color1").fadeOut();
+                    $("#color2").fadeOut("slow");
+                    $("#color3").fadeOut(3000);
+                    $("#color4").fadeOut(500);
+
+                });
+
+                $("#fadeColorin").click(function () {
+
+
+                    $("#color1").fadeIn();
+                    $("#color2").fadeIn("slow");
+                    $("#color3").fadeIn(3000);
+                    $("#color4").fadeIn(500);
+
+                });
+
+                $("#fadeColortoggle").click(function () {
+
+
+                    $("#color1").fadeToggle();
+                    $("#color2").fadeToggle("slow");
+                    $("#color3").fadeToggle(3000);
+                    $("#color4").fadeToggle(500);
+
+                });
+
+                $("#fadeColorto").click(function () {
+
+
+                    $("#color1").fadeTo("slow", 0.35);
+                    $("#color2").fadeTo("slow", 0.45);
+                    $("#color3").fadeTo("slow", 0.55);
+                    $("#color4").fadeTo("slow", 0.65);
+
+                });
+
+
+
+            });
+
+        </script>
+
+        <style>
+            div {
+                height: 100px;
+                width: 100px;
+                color: aliceblue;
+
+
+            }
+
+            .btn-primary {
+                box-shadow: 0 0 0 1px #428bca inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+                background-color: #428bca;
+            }
+
+            .btn3d {
+                transition: all .08s linear;
+                position: relative;
+                outline: medium none;
+                /* -moz-outline-style: none; */
+                border: 0px;
+                margin-right: 10px;
+                margin-top: 15px;
+            }
+
+            .btn3d:focus {
+                outline: medium none;
+                /* -moz-outline-style: none; */
+            }
+
+            .btn3d:active {
+                top: 9px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <p>Check this out</p>
+        <div id="color1" style="background-color: red;"></div>
+        <br>
+        <div id="color2" style="background-color: green;"></div>
+        <br>
+        <div id="color3" style="background-color: yellow;"></div>
+        <br>
+        <div id="color4" style="background-color: blue;"></div>
+        <br>
+
+
+        <button id="fadeColorout" type="button" class="btn btn-primary btn3d"><span
+                class="glyphicon glyphicon-ok"></span>FADEOUT COLOR</button>
+        <button id="fadeColorin" type="button" class="btn btn-primary btn3d"><span
+                class="glyphicon glyphicon-ok"></span>FADEIN COLOR</button>
+        <button id="fadeColortoggle" type="button" class="btn btn-primary btn3d"><span
+                class="glyphicon glyphicon-ok"></span>FADETOGGLE COLOR</button>
+        <button id="fadeColorto" type="button" class="btn btn-primary btn3d"><span
+                class="glyphicon glyphicon-ok"></span>FADETO COLOR</button>
+    </body>
+
+</html>

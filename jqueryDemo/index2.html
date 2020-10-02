@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>JQuery Demo2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#show").click(function () {
+                    $("#div").show("slow");
+                });
+                $("#hide").click(function () {
+                    $("#div").hide(1000, "swing");
+                });
+                $("#toggle").click(function () {
+                    $("#div").toggle("slow");
+                });
+
+                $("#sup").click(function () {
+                    $("#div").slideUp("slow");
+                });
+                $("#sdown").click(function () {
+                    $("#div").slideDown(1000, "linear");
+                });
+                $("#toggleSlide").click(function () {
+                    $("#div").slideToggle("slow");
+                });
+
+
+            });
+        </script>
+        <style>
+            #div {
+                font-size: xx-large;
+                font-stretch: expanded;
+                background-color: powderblue;
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-bottom: 10px;
+                text-shadow: 3px 3px 4px;
+                height: 400px;
+            }
+
+            button {
+                margin-top: 10px;
+                margin-left: 50px;
+                border-radius: 10px;
+                color: blue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <p style="text-align: center;font-size: xx-large;font-weight: bolder;">WELCOME TO JQUERY DEMO PART-2</p>
+        <div id="div">THIS IS DEMO TEXT</div>
+        <button id="show" type="button" class="btn btn-primary btn-lg btn-dark">
+            SHOW
+        </button>
+        <button id="hide" type="button" class="btn btn-primary btn-lg btn-dark">
+            HIDE
+        </button>
+        <button id="toggle" type="button" class="btn btn-primary btn-lg btn-dark">
+            TOGGLE
+        </button>
+
+        <button id="sup" type="button" class="btn btn-primary btn-lg btn-dark">
+            SLIDE UP
+        </button>
+        <button id="sdown" type="button" class="btn btn-primary btn-lg btn-dark">
+            SLIDE DOWN
+        </button>
+        <button id="toggleSlide" type="button" class="btn btn-primary btn-lg btn-dark">
+            TOGGLE SLIDE
+        </button>
+    </body>
+
+</html>

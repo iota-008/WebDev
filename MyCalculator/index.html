@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="decsription" content="JavaScript Calculator">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title style="text-align: center;">CALCULATOR</title>
+
+    </head>
+
+    <body>
+        <h1
+            style="text-align: center;font-weight: bolder;font-size: xx-large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            CALCULATOR</h1>
+        <br>
+        <form id="myform" name="calc">
+            <input name="display" id="ans"><br>
+            <input type="button" class="btn btn-primary btn3d" value="0" onclick="calc.display.value+='0'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="1" onclick="calc.display.value+='1'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="2" onclick="calc.display.value+='2'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="3" onclick="calc.display.value+='3'"><span
+                class="glyphicon glyphicon-ok"></span><br>
+            <input type="button" class="btn btn-primary btn3d" value="4" onclick="calc.display.value+='4'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="5" onclick="calc.display.value+='5'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="6" onclick="calc.display.value+='6'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="7" onclick="calc.display.value+='7'"><span
+                class="glyphicon glyphicon-ok"></span><br>
+            <input type="button" class="btn btn-primary btn3d" value="8" onclick="calc.display.value+='8'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="9" onclick="calc.display.value+='9'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="+" onclick="calc.display.value+='+'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="-" onclick="calc.display.value+='-'"><span
+                class="glyphicon glyphicon-ok"></span><br>
+            <input type="button" class="btn btn-primary btn3d" value="/" onclick="calc.display.value+='/'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="*" onclick="calc.display.value+='*'"><span
+                class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="="
+                onclick="calc.display.value = eval(calc.display.value)"><span class="glyphicon glyphicon-ok"></span>
+            <input type="button" class="btn btn-primary btn3d" value="C" onclick="calc.display.value =''"><span
+                class="glyphicon glyphicon-ok"></span><br>
+        </form>
+
+    </body>
+
+</html>
