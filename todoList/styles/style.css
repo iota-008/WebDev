@@ -1,0 +1,96 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: white;
+	align-content: center;
+	background-color: slategray;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	align-items: center;
+}
+li {
+	color: black;
+	font-weight: 500;
+	height: 35px;
+	text-align: start;
+	padding-left: 5px;
+	background-color: yellow;
+	margin: 5px 37px;
+	border-radius: 5px;
+	box-shadow: 5px -5px 5px black;
+}
+
+input {
+	outline: none;
+	box-shadow: 5px -5px 5px black;
+	height: 30px;
+	width: 255px;
+	border-radius: 10px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+button {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+.remove {
+	height: 15px;
+	background-color: red;
+	font-size: 11px;
+	border-radius: 3px;
+	float: right;
+}
+
+.btn3d {
+	transition: all 0.08s linear;
+	position: relative;
+	outline: medium none;
+
+	border: 0px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.btn3d:focus {
+	outline: medium none;
+}
+.btn3d:active {
+	top: 9px;
+}
+.btn-default {
+	margin-left: 3px;
+	height: 25px;
+	box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+		0 3px 0 0 #adadad, 0 3px 0 1px rgba(0, 0, 0, 0.4),
+		0 3px 3px 1px rgba(0, 0, 0, 0.5);
+	background-color: rgb(255, 0, 0);
+}
+
+.container {
+	/* margin: 15% 30%; */
+	align-self: center;
+	margin-left: 200px;
+	margin-top: 20px;
+	float: center;
+	background-color: blue;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 1000px;
+	border-radius: 10px;
+	box-shadow: 5px -5px 5px black;
+}
+
+/* #todos {
+	background-color: yellow;
+	width: 255px;
+	float: center;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 120px;
+	box-shadow: 5px -5px 5px black;
+} */
